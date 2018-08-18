@@ -1,0 +1,30 @@
+<html>
+  <head>login for attnedtion system</head>
+  <script>
+     function ICTWin(x,y,z) {
+    var newwin = window.open (x,y,z) ;
+	}
+	</script>
+	  <script>
+     function checkpwd(){
+	 if (myform.sindex.value=="19030" && myform.pwd.value=="abcd1234")
+	 
+	 {
+	 window.open("take.html");
+	 }
+	 else{window.alert("Wrong Username Or Password")}
+	 }
+	</script>
+          </head>
+                     <body>
+<form name=myform
+action=action.asp
+method=get
+enctype=text/plain>
+  Index:<input type=text name=sindex><br>
+   Password:<input type=password name=pwd ><br>
+ <input type=button value=LOGIN  onclick=checkpwd()>
+ <input type=submit value=ENTER  onclick="alert('Input Success')">
+ <input type=button value=sayhi onclick='ICTWin("../contact.html","","width=300,height=300,top=50,left=50")'>
+</body>
+<html>

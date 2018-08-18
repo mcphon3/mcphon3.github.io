@@ -1,0 +1,40 @@
+<html>
+<script>
+function chgToA(){img1.src="image/a.jpg"}
+	function chgToB(){img1.src="image/b.jpg"}
+	function chgToC(){img1.src="image/c.png"}
+	function BBB() {setInterval(chgToB, 6000);}
+	function CCC() {setInterval(chgToC, 6000);}
+	function AAA() {setInterval(chgToA, 6000);}
+
+	function rotate(){
+		BBB();
+		setTimeout(CCC, 2000);
+		setTimeout(AAA, 4000);
+		}
+		</script>
+<body onload=rotate()>
+<table border=0 width=1600 height=100>
+<tr>
+  <td>
+  <table border=0>
+  <td>
+  welcome to the online chatbox
+  </td>
+   <tr>
+  <td>
+  <iframe WIDTH="600" HEIGHT="700" title="Shoutbox" src="https://shoutbox.widget.me/start.html?uid=oy07r0yqbp" frameborder="0" scrolling="auto"></iframe> 
+  </td>
+  </table>
+  </td>
+  <td width=100>
+  </td>
+
+  <td>
+  <img src=image/a.jpg width=800 height=500  id="img1">
+  </td>
+  
+</tr>
+</table>
+<body>
+</html>
